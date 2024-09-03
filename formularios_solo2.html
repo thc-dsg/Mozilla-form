@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Solo PT2</title>
+    <h1>Formulário Solo PT2</h1>
+</head>
+<body>
+    
+    <form action="">
+        <label for="nome">Usuário:</label>
+        <input type="text" name="nome" title="o formato esperado é de x.xxx" id="name" placeholder="x.xxx" required pattern="([^A-Z-\d]{1}[^;,\w][^A-Z]{3,10000000000000})">
+        <label for="tel" >Telefone: </label> 
+        <input type="tel" name="telefone" title="o formato esperado é de ###-###-####" placeholder="###-###-####" id="fone" required pattern="(^\d{10}$)|([0-9]{3}-[0-9]{3}-[0-9]{4})">
+        <label for="email">Email:</label>
+        <input type="email" name="email" title="o formato esperado é de @bigcorp.eu" id="mail" placeholder="seuemail@bigcorp.eu" required pattern="[a-zA-Z0-9._]+@bigcorp\.eu">
+        <br>
+        <br>
+        <label for="envi"></label>
+        <input type="submit" id="envi" name="Enviar">
+    </form>
+
+
+
+<style>
+#envi {
+        font-weight: bold;
+}
+
+h1 {
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+form {
+        text-align: center;
+        font-weight: 400;
+}
+
+#name {
+        text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 1em;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+input {
+  text-align: center;
+}
+
+::placeholder {
+      display: block;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-style: bold;
+}
+
+input:empty {
+  background-color:rgb(255, 255, 255);
+}
+
+input:valid {
+  background-color: rgb(255, 255, 255);
+}
+ 
+input:invalid {
+  background-color: lightpink;
+}
+    </style>
+
+</body>
+
+<script>
+
+  const alterar = () => {
+    let mail = document.getElementById("mail")
+    mail.innerHTML="buceta"
+  }
+</script>
+
+</html>
