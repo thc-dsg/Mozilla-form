@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Solo</title>
+
+</head>
+<body>
+
+    <h1>Formulário Solo Caralho</h1>
+
+    <form action="">
+        
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" required minlength="5" maxlength="20" id="nome">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" required id="email">
+        <label for="tel">Telefone:</label>
+        <input type="tel" name="telefone" required maxlength="15" id="telefone">
+        <label for="comment">Comentários:</label>
+        <input type="comment" name="comentários" id="comment" pattern="" required maxlength="200">
+        <input type="submit" value="Enviar">
+
+    </form>
+    
+    <style>
+    label {
+  display: block;
+  margin-top: 2em;
+}
+    body {
+    font: bold 12 sans-serif;
+    }
+
+input:valid {
+  background-color: palegreen;
+}
+
+input:invalid {
+  background-color: lightpink;
+}
+    </style>
+</html>
